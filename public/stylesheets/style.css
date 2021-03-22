@@ -7,12 +7,13 @@ body, html {
   padding: 0;
   margin: 0;
   font-family: sans-serif;
-  color: #333;
+  background-color: rgb(18, 88, 129);
+  color: silver;
 }
 
 a {
   text-decoration: none;
-  color: #225ca3;
+  color: silver;
   font-weight: bold;
   transition: color .1s;
 }
@@ -22,10 +23,10 @@ a:hover {
 }
 
 button {
-  background-color: #225ca3;
+  background-color: silver;
   border: 0;
   padding: 1%;
-  color: white;
+  color: #225ca3;
   font-weight: bold;
   transition: background-color .1s;
   cursor: pointer;
@@ -97,7 +98,7 @@ main {
   padding: 0;
   cursor: pointer;
   text-decoration: none;
-  color: #225ca3;
+  color: silver;
   font-size: 100%;
   font-weight: bold;
   transition: color .1s;
@@ -120,6 +121,7 @@ main {
 .post {
   margin-bottom: 2%;
   line-height: 150%;
+  border: solid
 }
 
 .post .title span {
@@ -131,15 +133,6 @@ main {
 .edit-link {
   display: block;
   margin: -1.5% 0 2% 0;
-}
-
-.upvote-btn {
-  background-color: #197d0f;
-  transition: background-color .1s;
-}
-
-.upvote-btn:hover {
-  background-color: #1f9c13;
 }
 
 .comment-form {
@@ -155,10 +148,20 @@ main {
   background-color: #fff5eb;
 }
 
+.comment:nth-child(even) {
+  background-color: steelblue;
+}
+
+
 .comment .meta {
   font-size: 90%;
   margin-bottom: .5%;
   opacity: .6;
+  color: rgb(66, 64, 64);
+}
+
+.comment .text {
+  color: rgb(66, 64, 64);
 }
 
 .new-post-form input {
@@ -167,6 +170,33 @@ main {
 
 .edit-post-form {
   margin-bottom: 5%;
+}
+
+.post .title h2 {
+  display: flex;
+  justify-content: space-between;
+  background-color: slategrey;
+  margin: 0 0 .25rem 0
+}
+
+.post .title span {
+  font-weight: normal;
+  font-size: medium;
+  padding: .25rem;
+  align-items: flex-end;
+  color: rgb(66, 64, 64);
+}
+
+#main-title {
+  font-size: 28px;
+}
+
+#post-info {
+  padding: .25rem;
+}
+
+#comment-info {
+  padding: .25rem;
 }
 
 footer {
