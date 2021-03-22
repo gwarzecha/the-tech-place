@@ -5,8 +5,12 @@
   </h2>
   <form class="edit-post-form">
     <div>
+      <label for="post-title">Title</label>
       <input name="post-title" type="text" value="{{post.title}}" />
-      <span>({{post.post_content}})</span>
+    </div>
+    <div>
+      <label for="post-content">Post Content</label>
+      <textarea id="post-content" name="post-content">{{post.post_content}}</textarea>
     </div>
     <div>
       Created by you on {{format_date post.created_at}}
@@ -18,18 +22,5 @@
   </form>
 </article>
 
-<form class="comment-form">
-  <div>
-    <textarea name="comment-body"></textarea>
-  </div>
-
-  <div>
-    <button type="submit">add comment</button>
-  </div>
-</form>
-
-{{> comments post.comments}}
-
 <script src="/javascript/edit-post.js"></script>
 <script src="/javascript/delete-post.js"></script>
-<script src="/javascript/comment.js"></script>

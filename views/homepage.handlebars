@@ -3,8 +3,8 @@
   <li>
     <article class="post">
       <div class="title">
-        <a href="{{post.post_content}}" target="_blank">{{post.title}}</a>
-        <span>({{post.post_content}})</span>
+        <h2><a href="/post/{{id}}">{{title}}</a> <span>(created by {{user.username}} on {{format_date
+            created_at}})</span></h2>
       </div>
       <div class="meta">
         <a href="/post/{{post.id}}">{{post.comments.length}} comment(s)</a>
