@@ -11,11 +11,12 @@ const sequelize = require('./config/connection');
 const SequelizeStore = require('connect-session-sequelize')(session.Store);
 
 const sess = {
-  secret: 'cocopuffs',
+  secret: process.env.EXPRESS_SECRET,
   cookie: {
     maxAge: 900000
   },
   resave: false,
+  rolling: true,
   saveUninitialized: true,
   store: new SequelizeStore({
     db: sequelize
