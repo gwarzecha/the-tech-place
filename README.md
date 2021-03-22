@@ -4,7 +4,7 @@
   
   ## Description: 
 
-  The Nerd Best is a CMS-style blog site built following the MVC paradigm. It allows a user to sign up or log in to their account, create/edit/delete their own blog posts, and also comment on blog posts that others have contributed. The app was created primarily utilizing Express.js for server-side implementation including controllers/API, the express-session nmp package for authentication, Handlebars.js for views, and MySQL and Sequelize for the ORM. The npm packages dotenv and bcrypt were also used for environment variables and password hashing respectively. 
+  The Nerd Nest is a CMS-style blog site built following the MVC paradigm. It allows a user to sign up or log in to their account, create/edit/delete their own blog posts, and also comment on blog posts that others have contributed. The app was created primarily utilizing Express.js for server-side implementation including controllers/API, the express-session nmp package for authentication, Handlebars.js for views, and MySQL and Sequelize for the ORM. The npm packages dotenv and bcrypt were also used for environment variables and password hashing respectively. 
 
   ![The Nerd Nest](./media/ss2.png)
   
